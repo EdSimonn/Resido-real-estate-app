@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-100">
-      <div className="max-w-[1400px] mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center">
           <div className="flex space-x-4 items-center">
             {/* logo */}
@@ -41,13 +41,13 @@ const Navbar = () => {
 
             {/* primary nav */}
             <ul className="hidden md:flex items-center space-x-1">
-              <li className="py-5 px-3 text-xl text-gray-700 hover:text-gray-900">
+              <li className="py-5 px-3 text-md text-gray-700 hover:text-gray-900">
                 <Link to="/">Home</Link>
               </li>
-              <li className="py-5 px-3 text-xl text-gray-700 hover:text-gray-900">
+              <li className="py-5 px-3 text-md text-gray-700 hover:text-gray-900">
                 <Link to="/listings">Listings</Link>
               </li>
-              <li className="py-5 px-3 text-xl text-gray-700 hover:text-gray-900">
+              <li className="py-5 px-3 text-md text-gray-700 hover:text-gray-900">
                 Features
               </li>
             </ul>
@@ -56,12 +56,12 @@ const Navbar = () => {
           {/* mobile button and login/signup */}
           <div className=" flex items-center space-x-4">
             <div className="flex items-center space-x-1">
-              <a href="" className="py-5 px-3 text-lg">
+              <a href="" className="py-5 px-3 text-md">
                 Login
               </a>
               <a
                 href=""
-                className="py-2 px-3 bg-blue-600 hover:bg-blue-500 text-white rounded transition duration-300 text-lg"
+                className="py-2 px-3 bg-blue-600 hover:bg-blue-500 text-white rounded transition duration-300 text-md"
               >
                 Register
               </a>
@@ -93,13 +93,13 @@ const Navbar = () => {
       {/* mobile menu */}
       {isMobileMenuOpen && (
         <ul className="md:hidden px-9">
-          <li className="py-2 text-xl text-gray-700 hover:text-gray-900">
+          <li className="py-2 text-md text-gray-700 hover:text-gray-900">
             <Link to="/">Home</Link>
           </li>
-          <li className="py-2 text-xl text-gray-700 hover:text-gray-900">
+          <li className="py-2 text-md text-gray-700 hover:text-gray-900">
             <Link to="/listings">Listings</Link>
           </li>
-          <li className="py-2 text-xl text-gray-700 hover:text-gray-900">
+          <li className="py-2 text-md text-gray-700 hover:text-gray-900">
             Features
           </li>
         </ul>
